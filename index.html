@@ -1,7 +1,115 @@
-<p>hey伙计</p>
-<p>你有幸作为一只愚蠢的土拨鼠来到这里</p>
-<p>那便勉为其难的欢迎一下你吧，谁叫这是一个测试网站呢是吧</p>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/hangsing">知乎</a> </li>
-</ul>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>uu我爱你</title>
+    <meta name="keywords" content="天牛,天牛网,表白网,html5表白,天牛表白网">
+    <script type="text/javascript">
+	document.addEventListener("WeixinJSBridgeReady", function () {
+	    audioAutoPlay('bgaudio');
+	}, false);
+	document.addEventListener('YixinJSBridgeReady', function() {
+	    audioAutoPlay('bgaudio');
+	}, false);
+	</script>
+	<link  type="text/css"  href="http://www.tianox.com:80/teamplate/heart/css/default.css"rel="stylesheet">
+	<link rel="stylesheet" href="http://www.tianox.com:80/css/style.css" type="text/css"></link>
+	<style type="text/css">
+		#code {
+			float: left;
+			width: 440px;
+			height: 400px;
+			color: #FF2B2B;
+			font-family: "幼圆";
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body style="background-color: #FFACFF">
+<input type="hidden" id = "loveDate" value='2015-11-03 00:00:00' >
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code" style="display:none;">
+				 <span class="space">冰冰：</span><br><span class="space"></span><br><span class="space">我不能确定未来能否给你幸福，</span><br><span class="space"></span><br><span class="space">但是我发誓，我会一直努力让你幸福</span><br><span class="space"></span><br><span class="space">我不敢保证能让你过上住洋楼，</span><br><span class="space"></span><br><span class="space">但是我会努力争取让你幸福... </span><br><span class="space"></span><br><span class="space">我很喜欢写日记，</span><br><span class="space"></span><br><span class="space">可我日记里没有你。</span><br><span class="space"></span><br><span class="space">只因我的日记都记载着过去，</span><br><span class="space"></span><br><span class="space">而你在我的生命里，</span><br><span class="space"></span><br><span class="space">我想你陪我一起走过这世间的风雨，</span><br><span class="space"></span><br><span class="space">你愿意成为我永远的现在么?</span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span><br><span class="space">	      </span>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						记录我们相爱的日子
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+							冰冰，I love you forever<br/>
+						<div class="signature">-- 天牛表白网</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			
+				
+					<div class="watermark">
+						<a href="http://www.tianox.com" target="_blank">@天牛表白网提供技术支持 www.tianox.com </a>
+					</div>
+				
+			
+		
+	</div>
+	<div style="display: none">
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0c51d57e8e2fb90fe3fd1a56cdd5e3a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256941446'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256941446' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+	<div style="display:none">
+    
+    	
+    		<audio id="bgaudio" src="https://tianox.oss-cn-shanghai.aliyuncs.com/music/%E5%BC%A0%E9%9D%93%E9%A2%96%20-%20%E7%BB%88%E4%BA%8E%E7%AD%89%E5%88%B0%E4%BD%A0.mp3" autoplay="autoplay" loop="-1"></audio>
+    	
+    	
+    
+</div>
+</body>
+
+<script type="text/javascript" src="http://www.tianox.com:80/teamplate/heart/js/jquery.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/js/autoplay.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/teamplate/heart/js/garden.js"></script>
+<script type="text/javascript" src="http://www.tianox.com:80/teamplate/heart/js/functions.js"></script>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date(Date.parse($("#loveDate").val().replace(/-/g,  "/"))); 
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "亲爱的，你的浏览器不支持HTML5!看不了网站效果<br/>"+
+	"请使用以下浏览器 Chrome 14+IE 9+/Firefox 7+/Safari 4+/Opera 10+<br/>"+
+	"如果没有以上浏览器，<br/>";
+	document.body.appendChild(msg);
+    document.execCommand("stop");
+} else {
+	$("#code").css("display", "");
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</html>
